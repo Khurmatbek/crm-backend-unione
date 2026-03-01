@@ -2,15 +2,11 @@ const express = require("express");
 const cors = require("cors");
 require('dotenv').config();
 
-const connectDB = require('./src/config/db');
+const connectDB = require('./config/db');
 /*  routes part */
-const authRoutes = require("./src/routes/auth");
-// const studentRoutes = require("./src/routes/student");
-// const subjectRoutes = require("./src/routes/subjects");
-// const scoreRoutes = require("./src/routes/scores");
-const teacherRoutes = require("./src/routes/teachers");
-// const userRoutes = require("./src/routes/users");
-const adminRoutes = require("./src/routes/admin");
+const authRoutes = require("./routes/auth");
+const teacherRoutes = require("./routes/teachers");
+const adminRoutes = require("./routes/admin");
 
 
 const app = express();
